@@ -1,7 +1,7 @@
 name: second workflow
 on: push
 jobs:
-    hello-job
+    hello-job:
       runs-on: ubuntu-latest
       steps:
           - name: "hello"
