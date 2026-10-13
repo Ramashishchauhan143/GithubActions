@@ -10,5 +10,8 @@ jobs:
         run: echo "hello this is the first action on github action"
       - name: bye github action
         run: echo "bye github action"
+
+      - name: fail job intensally
+        run: exit 1
        
         
