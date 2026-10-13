@@ -4,9 +4,10 @@ on:
         workflows: [First workflow]
         types: 
             - completed
-            
+
 jobs:
   validate-html:
+    if: ${{github.event.workflow_run.conclusion == 'success'}}
     runs-on: ubuntu-latest
     steps:
       - name: get repo code
