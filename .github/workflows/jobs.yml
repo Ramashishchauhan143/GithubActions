@@ -1,5 +1,10 @@
 name: jobs-workflow
-on: push
+on: 
+    workflow_run: 
+        workflows: [First workflow]
+        types: 
+            - completed
+            
 jobs:
   validate-html:
     runs-on: ubuntu-latest
